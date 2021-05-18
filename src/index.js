@@ -1,17 +1,44 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { combineReducers, createStore, applyMiddleware, compose } from "redux";
+import createSagaMiddleware from "redux-saga";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+import { watchCollectionSaga } from "./store/WatcherSagas";
+import { watchAuthSaga } from "./store/WatcherSagas";
+import { watchMetadataSaga } from "./store/WatcherSagas";
+
+import { authReducer } from "./store/auth/reducer";
+import { collectionReducer } from "./store/collection/reducer";
+import { metadataReducer } from "./store/metadata/reducer";
+
+import App from "./App";
+
+
+const sagaMiddleware = createSagaMiddleware();
+
+
+
+const rootReducer = combineReducers({
+  auth: authReducer,
+  collection: collectionReducer,
+  metadata: metadataReducer,
+});
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(
+  rootReducer,
+  composeEnhancers(applyMiddleware(sagaMiddleware))
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+sagaMiddleware.run(watchCollectionSaga);
+sagaMiddleware.run(watchAuthSaga);
+sagaMiddleware.run(watchMetadataSaga);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);

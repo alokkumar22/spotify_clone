@@ -1,0 +1,12 @@
+.loadMain {
+  display: flex;
+  justify-content: center;
+  padding-top: 30vh;
+  margin-left: 220px;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}

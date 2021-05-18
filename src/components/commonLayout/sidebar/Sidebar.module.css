@@ -1,0 +1,70 @@
+.Sidebar {
+  position: fixed;
+  z-index: 500;
+  line-height: 16px;
+  letter-spacing: normal;
+  left: 0px;
+  top: 0px;
+  background-color: #000000;
+  font-family: sans-serif;
+  width: 220px;
+  /* height: 87vh; */
+  /* overflow: auto; */
+  font-size: 1.3rem;
+  padding: 0 0.3rem;
+}
+.Sidebar .logoName {
+  display: flex;
+  margin: 1.6rem 0;
+  font-size: 1.6rem;
+  align-items: center;
+  padding-left: 1.3rem;
+}
+.Sidebar .logoName p {
+  color: white;
+  margin-left: 0.6rem;
+}
+.Sidebar .navLinks {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.navLinks a {
+  text-decoration: none;
+}
+.otherPlaylists {
+  margin-top: 2rem 0;
+  border-bottom: dotted 1px gray;
+}
+.Sidebar a {
+  text-decoration: none;
+}
+
+.followingPlaylists {
+  margin-top: 1rem;
+  overflow-y: scroll;
+  height: 48vh;
+  margin-top: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: rgb(54, 54, 54); */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius:1rem;
+  background: rgb(122, 120, 120);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(192, 189, 189);
+}

@@ -1,0 +1,13 @@
+.relatedArtists {
+  font-family: sans-serif;
+  padding: 1rem;
+  margin-left: 220px;
+  margin-top: 10vh;
+  padding-right: 10px;
+  height: 77vh;
+  overflow: auto;
+}
+.relatedArtists h3 {
+  color: white;
+  margin-bottom: 1rem;
+}

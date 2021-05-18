@@ -1,0 +1,38 @@
+.search {
+  font-family: sans-serif;
+  overflow: auto;
+  position: absolute;
+  top: 8vh;
+  left: 220px;  right: 0;
+
+  bottom: 10vh;
+  z-index: 100;
+  /* width: 85.7%; */
+  height: 82vh;
+  padding: 1rem;
+  background-color: rgb(20, 20, 20);
+}
+
+.tracksSection {
+  height: 50vh;
+  position: relative;
+  left: 17px; /* Increase/Decrease this value for cross-browser compatibility */
+  overflow-y: scroll;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0.4rem;
+}
+.title h3 {
+  color: white;
+  font-size: 1.4rem;
+}
+.title a {
+  text-decoration: none;
+}
+.title h4 {
+  color: white;
+}

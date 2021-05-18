@@ -1,0 +1,95 @@
+.tracks {
+  background: linear-gradient(
+    rgba(18, 18, 18, 0.70),
+    rgba(18, 18, 18, 0.87) 5%,
+    rgb(0, 0, 0)
+  );
+  font-family: sans-serif;
+}
+
+.tracks table {
+  padding: 3.5rem;
+  padding-top: 2rem;
+  padding-right: 3rem;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tracks tbody tr:hover {
+  background-color: rgba(199, 191, 191, 0.164);
+}
+
+.tracks th,
+.tracks td {
+  text-align: start;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  color: rgb(187, 178, 178);
+}
+
+.tracks th {
+  padding-bottom: 0.6rem;
+  border-bottom: 0.4px solid rgba(128, 128, 128, 0.473);
+}
+
+.tracks tbody:before {
+  content: "";
+  display: block;
+  height: 20px;
+}
+
+.tracks td {
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+.tracks .serialNum {
+  padding: 0;
+  padding-left: 10px;
+  width: 1rem;
+}
+      
+.title {
+  /* width: 100%; */
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.artistLink {
+  text-decoration: none;
+  color: gray;
+}
+
+.title p:nth-of-type(1) {
+  color: white;
+  font-size: 1rem;
+  height: 1.2rem;
+  overflow: hidden;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.title p:nth-of-type(2) {
+  height: 1rem;
+  overflow: hidden;
+}
+.album {
+  min-width: 200px;
+}
+.album a {
+  color: gray;
+  text-decoration: none;
+}
+.dateAdded {
+  min-width: 150px;
+}
+.duration div{
+  display: flex;
+  align-items:center;
+}

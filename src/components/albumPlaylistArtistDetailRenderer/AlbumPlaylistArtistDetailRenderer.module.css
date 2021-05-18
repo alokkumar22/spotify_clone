@@ -1,0 +1,63 @@
+.mainDiv {
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  font-family: sans-serif;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  color: white;
+}
+.mainDiv img {
+  height: 200px;
+  width: 200px;
+  margin-right: 1rem;
+  box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.5);
+}
+.mainDiv .name{
+  max-height: 9.5rem;
+  overflow: hidden;
+}
+.mainDiv div {
+  width: 50vw;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.mainDiv div p {
+  padding-left: 3px;
+}
+.mainDiv div span {
+  padding-left: 3px;
+}
+.description{
+  max-height: 2.2rem;
+  overflow: hidden;
+}
+
+/* .AlbumPlaylistArtistDetailRenderer {
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  font-family: sans-serif;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  color: white;
+}
+
+.AlbumPlaylistArtistDetailRenderer img {
+  height: 200px;
+  width: 200px;
+  margin-right: 1rem;
+  box-shadow: 0px 4px 45px 0px rgba(0, 0, 0, 0.5);
+}
+
+.AlbumPlaylistArtistDetailRenderer div {
+  width: 50vw;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.AlbumPlaylistArtistDetailRenderer div p {
+  padding-left: 3px;
+}
+.AlbumPlaylistArtistDetailRenderer div span {
+  padding-left: 3px;
+} */

@@ -1,0 +1,19 @@
+.searchArtists {
+    font-family: sans-serif;
+    padding: 1rem;  padding-left: 220px;
+    padding-right: 20px;
+    padding-top: 12vh;
+    padding-bottom: 13vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  /* .searchArtists h3 {
+    color: white;
+    margin-bottom: 1rem;
+  } */
+  /* .searchArtists div {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+  } */

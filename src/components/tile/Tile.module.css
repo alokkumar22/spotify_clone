@@ -1,0 +1,63 @@
+.item {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.7rem;
+  align-items: flex-start;
+  background: rgb(24, 24, 24);
+  border-radius: 0.4rem;
+  animation: onLoad 0.4s;
+  position: relative;
+}
+@keyframes onLoad {
+  from {
+    transform: scale(0.2);
+  }
+}
+.item:hover {
+  background: rgb(40, 40, 40);
+}
+
+.playCircleFilledIcon {
+  position: absolute;
+  opacity: 0;
+  right: 10%;
+}
+
+.item:hover .playCircleFilledIcon {
+  animation: effect 0.4s forwards;
+}
+
+@keyframes effect {
+  0% {
+    opacity: 0;
+    top:58%;
+  }
+  100% {
+    opacity: 1;
+    top: 52%;
+  }
+}
+
+.item img {
+  height: 160px;
+  width: 160px;
+  margin-bottom: 0.3rem;
+}
+.item p:nth-of-type(1) {
+  color: white;
+  font-size: 0.9rem;
+  width: 160px;
+  margin-bottom: 0.3rem;
+  max-height: 2rem;
+  overflow: hidden;
+}
+.item p:nth-of-type(2) {
+  color: rgb(177, 173, 173);
+  font-size: 0.8rem;
+  width: 160px;
+  line-height: 1rem;
+  overflow: hidden;
+  max-height: 3rem;
+}

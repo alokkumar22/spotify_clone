@@ -1,0 +1,20 @@
+.categories {
+  font-family: sans-serif;
+  overflow: auto;
+  position: absolute;
+  top: 8vh;
+  left: 220px;  right: 0;
+
+  bottom: 10vh;
+  z-index: 100;
+  /* width: 85.7%; */
+  height: 82vh;
+  padding: 1rem;
+  background-color: rgb(20, 20, 20);
+}
+.categories h3 {
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}

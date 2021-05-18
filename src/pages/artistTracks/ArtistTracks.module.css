@@ -1,0 +1,62 @@
+.artistTracks {
+  overflow: auto;
+  position: absolute;
+  top: 8vh;
+  left: 220px;
+  right: 0;
+  bottom: 10vh;
+  z-index: 100;
+  height: 82vh;
+  font-family: sans-serif;
+}
+
+.artistDetail {
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  /* background-color: linear-gradient(to right, rgba(18, 18, 18, 0.4), rgba(18, 18, 18, 0.10) 20% );
+    writing it here does not work as backgroundImage is overriding this */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.playPauseDiv {
+  align-items: center;
+  display: flex;
+  background-image: linear-gradient(rgba(18, 18, 18, 0.6), rgba(18, 18, 18, 0.70));
+  padding: 1rem 1.5rem;
+  padding-bottom: 0;
+}
+
+.playPauseDiv button {
+  margin: 0 1.5rem;
+  color: white;
+  background: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  border: 2px solid white;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  padding-bottom: 1rem;
+}
+
+.title h3 {
+  color: white;
+  font-size: 1.4rem;
+}
+.title a {
+  text-decoration: none;
+}
+.title h4 {
+  color: white;
+  font-size: 0.8rem;
+  padding-right: 1rem;
+}

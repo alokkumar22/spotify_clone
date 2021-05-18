@@ -1,0 +1,86 @@
+.spotifyLogo {
+  position: relative;
+  margin: 20px auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  /* background: radial-gradient(
+        94px 276px,
+        circle farthest-corner,
+        transparent 22%,
+        #1a4005 22%,
+        #1a4005 35%,
+        transparent 35%
+      ), */
+  /* linear-gradient(top, #96ba2a, #75a621); */
+  /* background: linear-gradient(to bottom, #96ba2a, #75a621); */
+  /* border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); */
+  overflow: hidden;
+  background: white;
+}
+
+.bar {
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  border-radius: 50%;
+  border: 30px solid #0c0c0c;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(8deg) scale(0.7);
+}
+
+.barDark {
+  top: 20px;
+  left: -40px;
+}
+
+.barDark::before,
+.barDark::after {
+  background: #0a0a09;
+}
+
+.barMed {
+  top: 53px;
+  left: -44px;
+  transform: rotate(8deg) scale(0.6);
+  border-top-color: #0d0e0d;
+}
+
+.barMed::before,
+.barMed::after {
+  background: #080808;
+}
+
+.barLight {
+  top: 80px;
+  left: -49px;
+  transform: rotate(8deg) scale(0.5);
+  border-top-color: #0a0a0a;
+}
+
+.barLight::before,
+.barLight::after {
+  background: #0a0a0a;
+}
+
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+}
+
+.bar::before {
+  top: 0px;
+  left: 5px;
+}
+
+.bar::after {
+  top: 1px;
+  right: 4px;
+}

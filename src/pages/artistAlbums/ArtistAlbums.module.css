@@ -1,0 +1,16 @@
+.artistAlbums {
+    font-family: sans-serif;
+    padding: 1rem;
+    margin-left: 220px;
+    margin-top: 10vh;
+    padding-right: 10px;  
+    /* padding-bottom: 13vh; */
+    height: 77vh;
+    overflow: auto;
+  
+  }
+  .artistAlbums h3 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  

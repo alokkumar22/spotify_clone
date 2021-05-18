@@ -1,0 +1,16 @@
+.followingArtists,
+.followingPlaylists,
+.followingAlbums {
+  overflow: scroll;
+  position: absolute;
+  top: 8vh;
+  left: 220px;  right: 0;
+
+  bottom: 10vh;
+  right: 0;
+  z-index: 100;
+  /* width: 85.7%; */
+  height: 82vh;
+  font-family: sans-serif;
+  padding-left: 1rem;
+}
